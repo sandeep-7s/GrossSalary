@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t;
+	double x;
+	double gross;
+	cin >> t;
+	while(t--)
+	{
+		cin >> x;
+		if (x < 1500)
+		{
+			gross = 2*x;
+		
+		}
+		else if(x >= 1500)
+		{
+			gross= x + 500 + (98*x/100);
+		}
+		cout << fixed << setprecision(2) << gross << endl;
+		
+	}
+	
+}
